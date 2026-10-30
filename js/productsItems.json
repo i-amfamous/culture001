@@ -1,0 +1,674 @@
+[
+  {
+    "id": 1,
+    "sku": "FSH-00001",
+    "name": "Casual Black Handbag",
+    "brand": "Ashanti Apparel",
+    "category": "Accessories",
+    "subcategory": "Handbag",
+    "gender": "Unisex",
+    "price": 74.56,
+    "discountPercent": 50,
+    "finalPrice": 37.28,
+    "currency": "USD",
+    "colors": [
+      "White",
+      "Black",
+      "Brown"
+    ],
+    "sizes": [
+      "One Size"
+    ],
+    "material": "Linen",
+    "description": "Casual Black Handbag made from linen. Comfortable, durable and styled for everyday wear.",
+    "rating": 3.8,
+    "reviewCount": 122,
+    "stock": 47,
+    "tags": [
+      "bestseller"
+    ],
+    "coverImage": "https://picsum.photos/seed/fashion-00001/600/800",
+    "createdAt": "2026-10-01"
+  },
+  {
+    "id": 2,
+    "sku": "FSH-00002",
+    "name": "Modern Pink Loafers",
+    "brand": "Kumasi Co.",
+    "category": "Footwear",
+    "subcategory": "Loafers",
+    "gender": "Men",
+    "price": 177.72,
+    "discountPercent": 0,
+    "finalPrice": 177.72,
+    "currency": "USD",
+    "colors": [
+      "White",
+      "Pink"
+    ],
+    "sizes": [
+      "38",
+      "39",
+      "41",
+      "42",
+      "44",
+      "45"
+    ],
+    "material": "Polyester",
+    "description": "Modern Pink Loafers made from polyester. Comfortable, durable and styled for everyday wear.",
+    "rating": 3.2,
+    "reviewCount": 396,
+    "stock": 183,
+    "tags": [
+      "eco-friendly",
+      "summer"
+    ],
+    "coverImage": "https://picsum.photos/seed/fashion-00002/600/800",
+    "createdAt": "2024-12-15"
+  },
+  {
+    "id": 3,
+    "sku": "FSH-00003",
+    "name": "Relaxed Cream Sneakers",
+    "brand": "Osu Street",
+    "category": "Footwear",
+    "subcategory": "Sneakers",
+    "gender": "Men",
+    "price": 27.07,
+    "discountPercent": 0,
+    "finalPrice": 27.07,
+    "currency": "USD",
+    "colors": [
+      "Cream"
+    ],
+    "sizes": [
+      "38",
+      "39",
+      "40",
+      "41",
+      "42",
+      "43",
+      "44"
+    ],
+    "material": "Polyester",
+    "description": "Relaxed Cream Sneakers made from polyester. Comfortable, durable and styled for everyday wear.",
+    "rating": 3.8,
+    "reviewCount": 1857,
+    "stock": 325,
+    "tags": [
+      "sale",
+      "casual"
+    ],
+    "coverImage": "https://picsum.photos/seed/fashion-00003/600/800",
+    "createdAt": "2025-04-22"
+  },
+  {
+    "id": 4,
+    "sku": "FSH-00004",
+    "name": "Modern Cream Bodycon Dress",
+    "brand": "Kente Lane",
+    "category": "Dresses",
+    "subcategory": "Bodycon Dress",
+    "gender": "Unisex",
+    "price": 164.82,
+    "discountPercent": 0,
+    "finalPrice": 164.82,
+    "currency": "USD",
+    "colors": [
+      "Yellow",
+      "Olive",
+      "Cream"
+    ],
+    "sizes": [
+      "S",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "material": "Silk Blend",
+    "description": "Modern Cream Bodycon Dress made from silk blend. Comfortable, durable and styled for everyday wear.",
+    "rating": 4.4,
+    "reviewCount": 229,
+    "stock": 117,
+    "tags": [
+      "casual"
+    ],
+    "coverImage": "https://picsum.photos/seed/fashion-00004/600/800",
+    "createdAt": "2025-05-03"
+  },
+  {
+    "id": 5,
+    "sku": "FSH-00005",
+    "name": "Modern Olive Shorts",
+    "brand": "Labadi Luxe",
+    "category": "Bottoms",
+    "subcategory": "Shorts",
+    "gender": "Women",
+    "price": 128.81,
+    "discountPercent": 0,
+    "finalPrice": 128.81,
+    "currency": "USD",
+    "colors": [
+      "Olive"
+    ],
+    "sizes": [
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "material": "Canvas",
+    "description": "Modern Olive Shorts made from canvas. Comfortable, durable and styled for everyday wear.",
+    "rating": 5.0,
+    "reviewCount": 566,
+    "stock": 260,
+    "tags": [
+      "trending",
+      "new"
+    ],
+    "coverImage": "https://picsum.photos/seed/fashion-00005/600/800",
+    "createdAt": "2024-03-21"
+  },
+  {
+    "id": 6,
+    "sku": "FSH-00006",
+    "name": "Urban Brown Leggings",
+    "brand": "Osu Street",
+    "category": "Bottoms",
+    "subcategory": "Leggings",
+    "gender": "Women",
+    "price": 101.11,
+    "discountPercent": 0,
+    "finalPrice": 101.11,
+    "currency": "USD",
+    "colors": [
+      "Navy",
+      "Brown"
+    ],
+    "sizes": [
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "material": "Leather",
+    "description": "Urban Brown Leggings made from leather. Comfortable, durable and styled for everyday wear.",
+    "rating": 3.9,
+    "reviewCount": 1078,
+    "stock": 497,
+    "tags": [
+      "sale",
+      "handmade",
+      "trending"
+    ],
+    "coverImage": "https://picsum.photos/seed/fashion-00006/600/800",
+    "createdAt": "2026-05-27"
+  },
+  {
+    "id": 7,
+    "sku": "FSH-00007",
+    "name": "Oversized Navy Cap",
+    "brand": "Accra Thread",
+    "category": "Accessories",
+    "subcategory": "Cap",
+    "gender": "Unisex",
+    "price": 192.53,
+    "discountPercent": 0,
+    "finalPrice": 192.53,
+    "currency": "USD",
+    "colors": [
+      "Green",
+      "Navy"
+    ],
+    "sizes": [
+      "One Size"
+    ],
+    "material": "Kente Weave",
+    "description": "Oversized Navy Cap made from kente weave. Comfortable, durable and styled for everyday wear.",
+    "rating": 3.0,
+    "reviewCount": 1486,
+    "stock": 449,
+    "tags": [
+      "bestseller",
+      "new"
+    ],
+    "coverImage": "https://picsum.photos/seed/fashion-00007/600/800",
+    "createdAt": "2024-10-03"
+  },
+  {
+    "id": 8,
+    "sku": "FSH-00008",
+    "name": "Urban Orange Hoodie",
+    "brand": "Sankofa Style",
+    "category": "Tops",
+    "subcategory": "Hoodie",
+    "gender": "Women",
+    "price": 244.67,
+    "discountPercent": 0,
+    "finalPrice": 244.67,
+    "currency": "USD",
+    "colors": [
+      "Orange"
+    ],
+    "sizes": [
+      "S",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "material": "Kente Weave",
+    "description": "Urban Orange Hoodie made from kente weave. Comfortable, durable and styled for everyday wear.",
+    "rating": 4.9,
+    "reviewCount": 823,
+    "stock": 365,
+    "tags": [
+      "formal",
+      "casual"
+    ],
+    "coverImage": "https://picsum.photos/seed/fashion-00008/600/800",
+    "createdAt": "2025-09-15"
+  },
+  {
+    "id": 9,
+    "sku": "FSH-00009",
+    "name": "Urban Olive Crop Top",
+    "brand": "Volta Wear",
+    "category": "Tops",
+    "subcategory": "Crop Top",
+    "gender": "Men",
+    "price": 89.82,
+    "discountPercent": 0,
+    "finalPrice": 89.82,
+    "currency": "USD",
+    "colors": [
+      "Olive"
+    ],
+    "sizes": [
+      "XS",
+      "S",
+      "L",
+      "XL"
+    ],
+    "material": "Cotton",
+    "description": "Urban Olive Crop Top made from cotton. Comfortable, durable and styled for everyday wear.",
+    "rating": 4.7,
+    "reviewCount": 290,
+    "stock": 263,
+    "tags": [
+      "summer"
+    ],
+    "coverImage": "https://picsum.photos/seed/fashion-00009/600/800",
+    "createdAt": "2026-08-07"
+  },
+  {
+    "id": 10,
+    "sku": "FSH-00010",
+    "name": "Bold Pink Loafers",
+    "brand": "Osu Street",
+    "category": "Footwear",
+    "subcategory": "Loafers",
+    "gender": "Unisex",
+    "price": 221.54,
+    "discountPercent": 0,
+    "finalPrice": 221.54,
+    "currency": "USD",
+    "colors": [
+      "Red",
+      "Pink"
+    ],
+    "sizes": [
+      "39",
+      "41",
+      "44",
+      "45"
+    ],
+    "material": "Linen",
+    "description": "Bold Pink Loafers made from linen. Comfortable, durable and styled for everyday wear.",
+    "rating": 3.8,
+    "reviewCount": 1912,
+    "stock": 442,
+    "tags": [
+      "new",
+      "trending",
+      "limited"
+    ],
+    "coverImage": "https://picsum.photos/seed/fashion-00010/600/800",
+    "createdAt": "2025-12-11"
+  },
+  {
+    "id": 11,
+    "sku": "FSH-00011",
+    "name": "Vintage Olive Kaftan",
+    "brand": "Osu Street",
+    "category": "Traditional",
+    "subcategory": "Kaftan",
+    "gender": "Men",
+    "price": 54.03,
+    "discountPercent": 0,
+    "finalPrice": 54.03,
+    "currency": "USD",
+    "colors": [
+      "Yellow",
+      "Olive",
+      "Orange"
+    ],
+    "sizes": [
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "material": "Kente Weave",
+    "description": "Vintage Olive Kaftan made from kente weave. Comfortable, durable and styled for everyday wear.",
+    "rating": 3.0,
+    "reviewCount": 382,
+    "stock": 474,
+    "tags": [
+      "sale"
+    ],
+    "coverImage": "https://picsum.photos/seed/fashion-00011/600/800",
+    "createdAt": "2025-08-16"
+  },
+  {
+    "id": 12,
+    "sku": "FSH-00012",
+    "name": "Classic Cream Leggings",
+    "brand": "Volta Wear",
+    "category": "Bottoms",
+    "subcategory": "Leggings",
+    "gender": "Women",
+    "price": 47.84,
+    "discountPercent": 30,
+    "finalPrice": 33.49,
+    "currency": "USD",
+    "colors": [
+      "Cream"
+    ],
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "material": "Denim",
+    "description": "Classic Cream Leggings made from denim. Comfortable, durable and styled for everyday wear.",
+    "rating": 4.9,
+    "reviewCount": 2372,
+    "stock": 376,
+    "tags": [
+      "new",
+      "casual",
+      "limited"
+    ],
+    "coverImage": "https://picsum.photos/seed/fashion-00012/600/800",
+    "createdAt": "2024-10-16"
+  },
+  {
+    "id": 13,
+    "sku": "FSH-00013",
+    "name": "Classic Navy Heels",
+    "brand": "Osu Street",
+    "category": "Footwear",
+    "subcategory": "Heels",
+    "gender": "Unisex",
+    "price": 240.51,
+    "discountPercent": 15,
+    "finalPrice": 204.43,
+    "currency": "USD",
+    "colors": [
+      "Navy"
+    ],
+    "sizes": [
+      "39",
+      "43",
+      "45"
+    ],
+    "material": "Silk Blend",
+    "description": "Classic Navy Heels made from silk blend. Comfortable, durable and styled for everyday wear.",
+    "rating": 4.2,
+    "reviewCount": 162,
+    "stock": 317,
+    "tags": [
+      "formal"
+    ],
+    "coverImage": "https://picsum.photos/seed/fashion-00013/600/800",
+    "createdAt": "2026-10-19"
+  },
+  {
+    "id": 14,
+    "sku": "FSH-00014",
+    "name": "Slim Fit Cream Sandals",
+    "brand": "Cape Coast Denim",
+    "category": "Footwear",
+    "subcategory": "Sandals",
+    "gender": "Men",
+    "price": 57.43,
+    "discountPercent": 0,
+    "finalPrice": 57.43,
+    "currency": "USD",
+    "colors": [
+      "Cream"
+    ],
+    "sizes": [
+      "39",
+      "40",
+      "41",
+      "42"
+    ],
+    "material": "Ankara Wax Print",
+    "description": "Slim Fit Cream Sandals made from ankara wax print. Comfortable, durable and styled for everyday wear.",
+    "rating": 3.9,
+    "reviewCount": 2306,
+    "stock": 51,
+    "tags": [
+      "handmade"
+    ],
+    "coverImage": "https://picsum.photos/seed/fashion-00014/600/800",
+    "createdAt": "2024-09-09"
+  },
+  {
+    "id": 15,
+    "sku": "FSH-00015",
+    "name": "Urban Cream Shorts",
+    "brand": "Accra Thread",
+    "category": "Bottoms",
+    "subcategory": "Shorts",
+    "gender": "Unisex",
+    "price": 220.78,
+    "discountPercent": 0,
+    "finalPrice": 220.78,
+    "currency": "USD",
+    "colors": [
+      "Beige",
+      "Grey",
+      "Cream"
+    ],
+    "sizes": [
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "material": "Kente Weave",
+    "description": "Urban Cream Shorts made from kente weave. Comfortable, durable and styled for everyday wear.",
+    "rating": 3.2,
+    "reviewCount": 550,
+    "stock": 135,
+    "tags": [
+      "trending"
+    ],
+    "coverImage": "https://picsum.photos/seed/fashion-00015/600/800",
+    "createdAt": "2026-09-05"
+  },
+  {
+    "id": 16,
+    "sku": "FSH-00016",
+    "name": "Vintage Brown Mini Dress",
+    "brand": "Kente Lane",
+    "category": "Dresses",
+    "subcategory": "Mini Dress",
+    "gender": "Men",
+    "price": 181.66,
+    "discountPercent": 50,
+    "finalPrice": 90.83,
+    "currency": "USD",
+    "colors": [
+      "Brown"
+    ],
+    "sizes": [
+      "XS",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "material": "Silk Blend",
+    "description": "Vintage Brown Mini Dress made from silk blend. Comfortable, durable and styled for everyday wear.",
+    "rating": 3.7,
+    "reviewCount": 535,
+    "stock": 326,
+    "tags": [
+      "sale",
+      "streetwear"
+    ],
+    "coverImage": "https://picsum.photos/seed/fashion-00016/600/800",
+    "createdAt": "2026-12-14"
+  },
+  {
+    "id": 17,
+    "sku": "FSH-00017",
+    "name": "Urban White Sneakers",
+    "brand": "Kumasi Co.",
+    "category": "Footwear",
+    "subcategory": "Sneakers",
+    "gender": "Women",
+    "price": 236.7,
+    "discountPercent": 0,
+    "finalPrice": 236.7,
+    "currency": "USD",
+    "colors": [
+      "White"
+    ],
+    "sizes": [
+      "38",
+      "40",
+      "42",
+      "44"
+    ],
+    "material": "Kente Weave",
+    "description": "Urban White Sneakers made from kente weave. Comfortable, durable and styled for everyday wear.",
+    "rating": 3.1,
+    "reviewCount": 1493,
+    "stock": 460,
+    "tags": [
+      "casual"
+    ],
+    "coverImage": "https://picsum.photos/seed/fashion-00017/600/800",
+    "createdAt": "2024-11-08"
+  },
+  {
+    "id": 18,
+    "sku": "FSH-00018",
+    "name": "Elegant Red Handbag",
+    "brand": "Harmattan",
+    "category": "Accessories",
+    "subcategory": "Handbag",
+    "gender": "Men",
+    "price": 143.49,
+    "discountPercent": 0,
+    "finalPrice": 143.49,
+    "currency": "USD",
+    "colors": [
+      "Red"
+    ],
+    "sizes": [
+      "One Size"
+    ],
+    "material": "Canvas",
+    "description": "Elegant Red Handbag made from canvas. Comfortable, durable and styled for everyday wear.",
+    "rating": 4.7,
+    "reviewCount": 725,
+    "stock": 451,
+    "tags": [
+      "new",
+      "sale"
+    ],
+    "coverImage": "https://picsum.photos/seed/fashion-00018/600/800",
+    "createdAt": "2026-06-26"
+  },
+  {
+    "id": 19,
+    "sku": "FSH-00019",
+    "name": "Casual Orange Windbreaker",
+    "brand": "Volta Wear",
+    "category": "Outerwear",
+    "subcategory": "Windbreaker",
+    "gender": "Women",
+    "price": 204.2,
+    "discountPercent": 0,
+    "finalPrice": 204.2,
+    "currency": "USD",
+    "colors": [
+      "Beige",
+      "Orange"
+    ],
+    "sizes": [
+      "XS",
+      "L",
+      "XXL"
+    ],
+    "material": "Wool Blend",
+    "description": "Casual Orange Windbreaker made from wool blend. Comfortable, durable and styled for everyday wear.",
+    "rating": 4.6,
+    "reviewCount": 932,
+    "stock": 114,
+    "tags": [
+      "limited"
+    ],
+    "coverImage": "https://picsum.photos/seed/fashion-00019/600/800",
+    "createdAt": "2024-07-11"
+  },
+  {
+    "id": 20,
+    "sku": "FSH-00020",
+    "name": "Slim Fit Burgundy Maxi Dress",
+    "brand": "Osu Street",
+    "category": "Dresses",
+    "subcategory": "Maxi Dress",
+    "gender": "Unisex",
+    "price": 92.98,
+    "discountPercent": 0,
+    "finalPrice": 92.98,
+    "currency": "USD",
+    "colors": [
+      "Red",
+      "Burgundy"
+    ],
+    "sizes": [
+      "XS",
+      "S",
+      "M",
+      "XL",
+      "XXL"
+    ],
+    "material": "Cotton",
+    "description": "Slim Fit Burgundy Maxi Dress made from cotton. Comfortable, durable and styled for everyday wear.",
+    "rating": 4.5,
+    "reviewCount": 1284,
+    "stock": 223,
+    "tags": [
+      "handmade",
+      "trending",
+      "formal"
+    ],
+    "coverImage": "https://picsum.photos/seed/fashion-00020/600/800",
+    "createdAt": "2026-04-09"
+  }
+]
