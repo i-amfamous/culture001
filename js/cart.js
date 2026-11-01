@@ -147,3 +147,120 @@ if (deleteAllButton) {
 }
 
 renderCart();
+
+const checkOut = document.querySelector(".checkout");
+
+if (checkOut) {
+  checkOut.addEventListener("click", () => {
+    const orderSnapshot = [...cart];
+
+    cart = [];
+    saveCart();
+    renderCart();
+
+    const overlay = document.createElement("div");
+    overlay.classList.add("checkOutModalOverlay");
+    overlay.setAttribute("aria-hidden", "false");
+
+    const modal = document.createElement("div");
+    modal.classList.add("checkOutModal");
+    modal.setAttribute("role", "dialog");
+    modal.setAttribute("aria-modal", "true");
+
+    const checkOutImage = document.createElement("img");
+    checkOutImage.classList.add("checkImg");
+    checkOutImage.src = "../img/right.png";
+    checkOutImage.alt = "Order successful";
+
+    const paymentSucess = document.createElement("p");
+    paymentSucess.classList.add("success");
+    paymentSucess.textContent = "Order Successful";
+
+    const orderMessage = document.createElement("p");
+    orderMessage.classList.add("orderMessage");
+    orderMessage.textContent = "Thank you for your purchase. Your order has been successfully placed and is now being processed.";
+
+    const orderDetails = document.createElement("div");
+    orderDetails.classList.add("orderDetails");
+
+    const orderListTitle = document.createElement("p");
+    orderListTitle.classList.add("orderListTitle");
+    orderListTitle.textContent = "Your order:";
+
+    const orderList = document.createElement("ul");
+    orderList.classList.add("checkoutOrderList");
+
+    if (orderSnapshot.length > 0) {
+      orderSnapshot.forEach((item) => {
+        const listItem = document.createElement("li");
+        listItem.classList.add("checkoutOrderItem");
+
+        const itemName = document.createElement("span");
+        itemName.classList.add("checkoutOrderName");
+        itemName.textContent = `${item.name} x ${item.quantity}`;
+
+        const itemPrice = document.createElement("span");
+        itemPrice.classList.add("checkoutOrderPrice");
+        itemPrice.textContent = `$${(Number(item.price || 0) * Number(item.quantity || 1)).toFixed(2)}`;
+
+        listItem.append(itemName, itemPrice);
+        orderList.appendChild(listItem);
+      });
+    } else {
+      const emptyItem = document.createElement("li");
+      emptyItem.classList.add("checkoutOrderItem");
+      emptyItem.textContent = "No items in this order.";
+      orderList.appendChild(emptyItem);
+    }
+
+    const totalRow = document.createElement("p");
+    totalRow.classList.add("checkoutTotalRow");
+
+    const subtotalValue = orderSnapshot.reduce((total, item) => {
+      return total + Number(item.price || 0) * Number(item.quantity || 1);
+    }, 0);
+
+    totalRow.innerHTML = `<span>Total</span><strong>$${subtotalValue.toFixed(2)}</strong>`;
+
+    orderDetails.append(orderListTitle, orderList, totalRow);
+
+    const actions = document.createElement("div");
+    actions.classList.add("checkoutActions");
+
+    const primaryButton = document.createElement("button");
+    primaryButton.type = "button";
+    primaryButton.classList.add("checkoutButton", "checkoutPrimaryButton");
+    primaryButton.textContent = "Continue Shopping";
+
+    const secondaryButton = document.createElement("button");
+    secondaryButton.type = "button";
+    secondaryButton.classList.add("checkoutButton", "checkoutSecondaryButton");
+    secondaryButton.textContent = "Close";
+
+    const closeModal = () => overlay.remove();
+
+    primaryButton.addEventListener("click", () => {
+      closeModal();
+      window.location.href = "../index.html";
+    });
+
+    secondaryButton.addEventListener("click", closeModal);
+
+    overlay.addEventListener("click", (event) => {
+      if (event.target === overlay) {
+        closeModal();
+      }
+    });
+
+    document.addEventListener("keydown", (event) => {
+      if (event.key === "Escape") {
+        closeModal();
+      }
+    }, { once: true });
+
+    actions.append(primaryButton, secondaryButton);
+    modal.append(checkOutImage, paymentSucess, orderMessage, orderDetails, actions);
+    overlay.append(modal);
+    document.body.append(overlay);
+  });
+}

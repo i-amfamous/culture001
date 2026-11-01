@@ -223,6 +223,150 @@ main button:focus-visible {
     outline-offset: 3px;
 }
 
+/*------------------------------------------------
+                   CHECKOUT MODAL
+     ------------------------------------------------*/
+.checkOutModal {
+    width: min(100%, 420px);
+    padding: 2rem 1.5rem;
+    background: #fffdfb;
+    border: 1px solid #eaded5;
+    border-radius: 1.25rem;
+    box-shadow: 0 24px 60px rgba(30, 23, 19, 0.18);
+    text-align: center;
+}
+
+.checkImg {
+    display: block;
+    width: 72px;
+    height: 72px;
+    margin: 0 auto 1rem;
+    object-fit: contain;
+}
+
+.success {
+    margin: 0 0 0.5rem;
+    color: #292622;
+    font-size: clamp(1.5rem, 4vw, 2rem);
+    line-height: 1.2;
+    font-weight: 700;
+}
+
+.orderMessage {
+    margin: 0;
+    color: #5d4837;
+    font-size: 0.96rem;
+    line-height: 1.6;
+}
+
+.orderDetails {
+    margin-top: 1.5rem;
+    padding: 1rem 1rem 0.75rem;
+    background: linear-gradient(180deg, #fffdfb 0%, #faf7f4 100%);
+    border: 1px solid #ece5df;
+    border-radius: 0.9rem;
+    color: #5d4837;
+    font-size: 0.92rem;
+    text-align: left;
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.8);
+}
+
+.orderListTitle {
+    margin: 0 0 0.85rem;
+    color: #292622;
+    font-size: 0.95rem;
+    font-weight: 700;
+    letter-spacing: 0.02em;
+}
+
+.checkoutOrderList {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.checkoutOrderItem {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.75rem;
+    padding: 0.6rem 0.2rem;
+    border-bottom: 1px solid #efe7e1;
+    color: #5d4837;
+}
+
+.checkoutOrderItem:last-child {
+    border-bottom: none;
+    padding-bottom: 0.25rem;
+}
+
+.checkoutOrderName {
+    flex: 1;
+    min-width: 0;
+    line-height: 1.4;
+    color: #403a34;
+}
+
+.checkoutOrderPrice {
+    flex-shrink: 0;
+    font-weight: 700;
+    color: #292622;
+}
+
+.checkoutTotalRow {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0.75rem 0 0;
+    padding-top: 0.9rem;
+    border-top: 1px solid #ece5df;
+    color: #292622;
+    font-weight: 700;
+}
+
+.checkOutModalOverlay {
+    position: fixed;
+    inset: 0;
+    display: grid;
+    place-items: center;
+    padding: 1rem;
+    background: rgba(23, 18, 15, 0.45);
+    z-index: 1000;
+}
+
+.checkoutActions {
+    display: flex;
+    justify-content: center;
+    gap: 0.75rem;
+    margin-top: 1.5rem;
+}
+
+.checkoutButton {
+    padding: 0.8rem 1.2rem;
+    border-radius: 999px;
+    border: 1px solid transparent;
+    font: inherit;
+    font-weight: 700;
+    cursor: pointer;
+    transition: transform 160ms ease, background-color 160ms ease;
+}
+
+.checkoutButton:hover {
+    transform: translateY(-1px);
+}
+
+.checkoutPrimaryButton {
+    background: #292622;
+    color: #fff;
+    border-color: #292622;
+}
+
+.checkoutSecondaryButton {
+    background: #fff;
+    color: #292622;
+    border-color: #e2d8cf;
+}
+
 @media (max-width: 760px) {
     main {
         grid-template-columns: 1fr;
