@@ -1,4 +1,4 @@
-main {
+.page-cart {
     display: grid;
     grid-template-columns: minmax(0, 1.7fr) minmax(280px, 0.8fr);
     align-items: start;
@@ -8,8 +8,8 @@ main {
     padding: clamp(2rem, 5vw, 4rem) 0;
 }
 
-main .left,
-main .right {
+.page-cart .left,
+.page-cart .right {
     min-width: 0;
     padding: clamp(1.25rem, 3vw, 2rem);
     background: #fff;
@@ -218,7 +218,7 @@ main .right {
     transform: translateY(-1px);
 }
 
-main button:focus-visible {
+.page-cart button:focus-visible {
     outline: 3px solid #d7a57b;
     outline-offset: 3px;
 }
@@ -368,7 +368,7 @@ main button:focus-visible {
 }
 
 @media (max-width: 760px) {
-    main {
+    .page-cart {
         grid-template-columns: 1fr;
         width: min(100% - 1.5rem, 620px);
     }

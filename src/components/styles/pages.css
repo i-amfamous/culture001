@@ -1,6 +1,6 @@
 /* Shared styles for the Contact and legal pages */
 
-body {
+.page-contact {
   background: #f7f3f0;
   color: #1d1d1d;
 }
@@ -17,7 +17,7 @@ main {
   color: #fff;
   background:
     linear-gradient(135deg, rgba(16, 13, 11, 0.86), rgba(43, 36, 33, 0.72)),
-    url("../img/bg.jpg") center/cover no-repeat;
+    url("/bg.jpg") center/cover no-repeat;
 }
 
 .page-hero .eyebrow {

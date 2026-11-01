@@ -1,4 +1,4 @@
-body {
+.page-about {
   background: #f7f3f0;
   color: #1d1d1d;
   font-family: "Inter", "Segoe UI", sans-serif;
@@ -8,7 +8,7 @@ main {
   display: block;
 }
 
-.hero {
+.page-about .hero {
   position: relative;
   isolation: isolate;
   min-height: 72vh;
@@ -21,23 +21,23 @@ main {
   text-align: center;
   color: #fff;
   overflow: hidden;
-  background: url("../img/aboutHero.jpg") center/cover no-repeat;
+  background: url("/aboutHero.jpg") center/cover no-repeat;
   background-color: rgba(0, 0, 0, 0.666);
   background-blend-mode: overlay;
 }
 
-.hero-slide {
+.page-about .hero-slide {
   display: none;
 }
 
-.hero h1,
-.hero p {
+.page-about .hero h1,
+.page-about .hero p {
   position: relative;
   z-index: 1;
   max-width: 72rem;
 }
 
-.hero h1 {
+.page-about .hero h1 {
   font-size: clamp(2.5rem, 5vw, 5rem);
   line-height: 1.05;
   letter-spacing: -0.06em;
@@ -45,7 +45,7 @@ main {
   text-shadow: 0 8px 24px rgba(0, 0, 0, 0.28);
 }
 
-.hero p {
+.page-about .hero p {
   max-width: min(65ch, 90%);
   font-size: clamp(1.05rem, 2vw, 1.3rem);
   line-height: 1.8;
@@ -112,7 +112,7 @@ main {
   line-height: 1.75;
 }
 
-.cta {
+.page-about .cta {
   width: min(calc(100% - 2rem), 1140px);
   margin: 0 auto 5rem;
   padding: clamp(2.25rem, 5vw, 4rem) clamp(1.25rem, 4vw, 3rem);
@@ -123,14 +123,14 @@ main {
   text-align: center;
 }
 
-.cta h3 {
+.page-about .cta h3 {
   margin-bottom: 1rem;
   font-size: clamp(2rem, 4vw, 3rem);
   line-height: 1.08;
   letter-spacing: -0.05em;
 }
 
-.cta p {
+.page-about .cta p {
   max-width: 60ch;
   margin: 0 auto;
   color: rgba(255, 255, 255, 0.8);
@@ -138,7 +138,7 @@ main {
   line-height: 1.8;
 }
 
-.cta a {
+.page-about .cta a {
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -156,8 +156,8 @@ main {
   transition: transform 180ms ease, background-color 180ms ease, color 180ms ease;
 }
 
-.cta a:hover,
-.cta a:focus-visible {
+.page-about .cta a:hover,
+.page-about .cta a:focus-visible {
   transform: translateY(-2px);
   background: #d7a57b;
   color: #161310;
@@ -170,7 +170,7 @@ main {
 }
 
 @media (max-width: 640px) {
-  .hero {
+  .page-about .hero {
     min-height: 60vh;
     padding-top: 5rem;
     padding-bottom: 5rem;
@@ -182,7 +182,7 @@ main {
     margin-bottom: 3rem;
   }
 
-  .cta {
+  .page-about .cta {
     width: min(calc(100% - 1.25rem), 1140px);
     margin-bottom: 3rem;
     border-radius: 16px;

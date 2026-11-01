@@ -1,4 +1,4 @@
-.hero {
+.page-home .hero {
     position: relative;
     isolation: isolate;
     display: flex;
@@ -7,7 +7,6 @@
     align-items: center;
     gap: 1.1rem;
     min-height: 82vh;
-    height: 82vh;
     padding: 2.5rem 1.5rem;
     margin-bottom: 2.5rem;
     text-align: center;
@@ -15,11 +14,11 @@
     overflow: hidden;
     background:
         linear-gradient(120deg, rgba(10, 10, 12, 0.86), rgba(23, 18, 16, 0.52)),
-        url("../img/kente.jpg") center/cover no-repeat;
+        url("/kente.jpg") center/cover no-repeat;
     box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.08);
 }
 
-.hero h1 {
+.page-home .hero h1 {
     position: relative;
     z-index: 1;
     max-width: 760px;
@@ -31,7 +30,7 @@
     text-shadow: 0 18px 40px rgba(0, 0, 0, 0.35);
 }
 
-.hero p {
+.page-home .hero p {
     position: relative;
     z-index: 1;
     max-width: 760px;
@@ -41,7 +40,7 @@
     text-shadow: 0 2px 18px rgba(0, 0, 0, 0.45);
 }
 
-.hero-buttons {
+.page-home .hero-buttons {
     position: relative;
     z-index: 1;
     display: flex;
@@ -51,7 +50,7 @@
     margin-top: 1rem;
 }
 
-.hero-buttons a {
+.page-home .hero-buttons a {
     display: inline-flex;
     align-items: center;
     justify-content: center;
@@ -71,8 +70,8 @@
     box-shadow: 0 10px 24px rgba(0, 0, 0, 0.18);
 }
 
-.hero-buttons a:hover,
-.hero-buttons a:focus-visible {
+.page-home .hero-buttons a:hover,
+.page-home .hero-buttons a:focus-visible {
     background: linear-gradient(135deg, #d4a57c, #b7794a);
     border-color: transparent;
     color: #fff;
@@ -80,9 +79,23 @@
     box-shadow: 0 18px 36px rgba(0, 0, 0, 0.22);
 }
 
-.hero-buttons a:focus-visible {
+.page-home .hero-buttons a:focus-visible {
     outline: 3px solid rgba(255, 255, 255, 0.8);
     outline-offset: 5px;
+}
+
+@media (max-width: 768px) {
+    .page-home .hero {
+        min-height: 60vh;
+        padding: 5rem 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .page-home .hero {
+        min-height: 55vh;
+        padding: 4rem 0.75rem;
+    }
 }
 
 .featuredProducts {
@@ -118,7 +131,7 @@
     background: linear-gradient(90deg, #111, #d7a57b, #111);
 }
 
-.products {
+.page-home .products {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(min(100%, 250px), 1fr));
     gap: 1.7rem;
@@ -671,7 +684,7 @@
 }
 
 @media (max-width: 480px) {
-    .products {
+    .page-home .products {
         width: min(calc(100% - 1.5rem), 1200px);
         gap: 1rem;
     }
@@ -682,7 +695,7 @@
     }
 }
 
-.cta {
+.page-home .cta {
     width: min(calc(100% - 2rem), 1140px);
     margin: 0 auto 5rem;
     padding: clamp(2.5rem, 6vw, 5rem) clamp(1.5rem, 5vw, 4.5rem);
@@ -692,12 +705,12 @@
     text-align: center;
 }
 
-.cta::before,
-.cta::after {
+.page-home .cta::before,
+.page-home .cta::after {
     content: none;
 }
 
-.cta h2 {
+.page-home .cta h2 {
     max-width: 20ch;
     margin: 0 auto;
     font-size: clamp(2rem, 5vw, 3.5rem);
@@ -706,7 +719,7 @@
     letter-spacing: -0.045em;
 }
 
-.cta p {
+.page-home .cta p {
     max-width: 58ch;
     margin: 1rem auto 0;
     color: rgba(255, 255, 255, 0.78);
@@ -714,7 +727,7 @@
     line-height: 1.75;
 }
 
-.cta .btn {
+.page-home .cta .btn {
     display: inline-flex;
     align-items: center;
     justify-content: center;
@@ -732,25 +745,25 @@
     transition: background-color 180ms ease, color 180ms ease, transform 180ms ease;
 }
 
-.cta .btn:hover {
+.page-home .cta .btn:hover {
     transform: translateY(-2px);
     background: transparent;
     color: white;
 }
 
-.cta .btn:focus-visible{
+.page-home .cta .btn:focus-visible{
     background: #171614;
     color: #fff;
 }
 
 @media (max-width: 480px) {
-    .cta {
+    .page-home .cta {
         width: min(calc(100% - 1.5rem), 1140px);
         margin-bottom: 3rem;
         border-radius: 14px;
     }
 
-    .cta .btn {
+    .page-home .cta .btn {
         width: 100%;
     }
 
@@ -769,49 +782,49 @@
 }
 
 header .header-container,
-.hero h1,
-.hero p,
-.hero-buttons,
+.page-home .hero h1,
+.page-home .hero p,
+.page-home .hero-buttons,
 .featuredProducts > h2,
 .review-heading,
-.cta,
+.page-home .cta,
 .footer-main,
 .footer-bottom {
     animation: page-enter 650ms cubic-bezier(0.2, 0.7, 0.2, 1) both;
 }
 
-.hero p {
+.page-home .hero p {
     animation-delay: 100ms;
 }
 
-.hero-buttons {
+.page-home .hero-buttons {
     animation-delay: 180ms;
 }
 
-.products .product-card,
+.page-home .products .product-card,
 .goals > div,
 .review-card {
     animation: page-enter 600ms cubic-bezier(0.2, 0.7, 0.2, 1) both;
 }
 
-.products .product-card:nth-child(2),
+.page-home .products .product-card:nth-child(2),
 .goals > div:nth-child(2),
 .review-slide .review-card:nth-child(2) {
     animation-delay: 80ms;
 }
 
-.products .product-card:nth-child(3),
+.page-home .products .product-card:nth-child(3),
 .goals > div:nth-child(3),
 .review-slide .review-card:nth-child(3) {
     animation-delay: 160ms;
 }
 
-.products .product-card:nth-child(4),
+.page-home .products .product-card:nth-child(4),
 .goals > div:nth-child(4) {
     animation-delay: 240ms;
 }
 
-.products .product-card:nth-child(5),
+.page-home .products .product-card:nth-child(5),
 .goals > div:nth-child(5) {
     animation-delay: 320ms;
 }
@@ -827,8 +840,8 @@ header .header-container,
 .review-control,
 .review-card,
 .goals > div,
-.cta,
-.cta .btn,
+.page-home .cta,
+.page-home .cta .btn,
 .footer-logo a,
 .footer-nav a,
 .footer-legal a,
@@ -871,7 +884,7 @@ header .header-container,
         transform: translateY(-5px);
     }
 
-    .cta:hover {
+    .page-home .cta:hover {
         transform: translateY(-4px);
         box-shadow: 0 18px 42px rgba(0, 0, 0, 0.2);
     }
