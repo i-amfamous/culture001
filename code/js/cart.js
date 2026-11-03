@@ -10,7 +10,7 @@ const deleteAllButton = document.querySelector(".deteBtn");
 
 /*------------------------------------------------
                     SUMMARY
-     ------------------------------------------------*/
+------------------------------------------------*/
 function updateSummary() {
   const tax = cart.length > 0 ? 5 : 0;
   const deliveryAmount = cart.length > 0 ? 5 : 0;
