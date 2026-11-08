@@ -1,8 +1,25 @@
-import "./styles/pages.css";
+import { useState } from "react";
 import NavBar from "./NavBar";
 import Footer from "./Footer";
+import "./styles/pages.css";
+
+const emptyForm = { name: "", email: "", subject: "", message: "" };
 
 const ContactPage = () => {
+  const [form, setForm] = useState(emptyForm);
+  const [sentTo, setSentTo] = useState("");
+
+  const handleChange = (event) => {
+    const { name, value } = event.target;
+    setForm((current) => ({ ...current, [name]: value }));
+  };
+
+  const handleSubmit = (event) => {
+    event.preventDefault();
+    setSentTo(form.name.trim() || "friend");
+    setForm(emptyForm);
+  };
+
   return (
     <>
       <NavBar />
@@ -43,7 +60,10 @@ const ContactPage = () => {
                   </div>
                 </li>
                 <li>
-                  <i className="fa-solid fa-location-dot" aria-hidden="true"></i>
+                  <i
+                    className="fa-solid fa-location-dot"
+                    aria-hidden="true"
+                  ></i>
                   <div>
                     <h3>Studio</h3>
                     <span>Accra, Ghana</span>
@@ -59,15 +79,17 @@ const ContactPage = () => {
               </ul>
             </div>
 
-            <form
-              className="contact-form"
-              action="mailto:hello@culture001.com"
-              method="post"
-              encType="text/plain"
-            >
+            <form className="contact-form" onSubmit={handleSubmit}>
               <label>
                 Name
-                <input type="text" name="name" autoComplete="name" required />
+                <input
+                  type="text"
+                  name="name"
+                  autoComplete="name"
+                  value={form.name}
+                  onChange={handleChange}
+                  required
+                />
               </label>
               <label>
                 Email
@@ -75,18 +97,37 @@ const ContactPage = () => {
                   type="email"
                   name="email"
                   autoComplete="email"
+                  value={form.email}
+                  onChange={handleChange}
                   required
                 />
               </label>
               <label>
                 Subject
-                <input type="text" name="subject" />
+                <input
+                  type="text"
+                  name="subject"
+                  value={form.subject}
+                  onChange={handleChange}
+                />
               </label>
               <label>
                 Message
-                <textarea name="message" required></textarea>
+                <textarea
+                  name="message"
+                  value={form.message}
+                  onChange={handleChange}
+                  required
+                ></textarea>
               </label>
               <button type="submit">Send message</button>
+
+              {sentTo && (
+                <p className="formSuccess" role="status">
+                  Thank you, {sentTo}. Your message has been received, we will
+                  reply within one business day.
+                </p>
+              )}
             </form>
           </div>
         </section>

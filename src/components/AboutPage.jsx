@@ -51,7 +51,7 @@ const AboutPage = () => {
       <div className="cta">
         <h3>Wear Your Story. Own Your Heritage.</h3>
         <p>
-          Fashion is always evolving, but heritage never goes out of style. Welcome to CULTURE / 001 — where Kente, African fashion, and modern expression come together in one bold identity.
+          Fashion is always evolving, but heritage never goes out of style. Welcome to CULTURE / 001 where Kente, African fashion, and modern expression come together in one bold identity.
         </p>
         <Link to="/products">Discover the Collection →</Link>
       </div>

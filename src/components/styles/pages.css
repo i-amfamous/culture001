@@ -259,3 +259,29 @@ main {
     margin: 3rem auto 3.5rem;
   }
 }
+
+/*------------------------------------------------
+              FORM FEEDBACK / NOT FOUND
+     ------------------------------------------------*/
+.formSuccess {
+    margin: 0.75rem 0 0;
+    padding: 0.85rem 1rem;
+    color: #2f5d3a;
+    font-size: 0.9rem;
+    line-height: 1.5;
+    background: #eef6ef;
+    border: 1px solid #cfe3d2;
+    border-radius: 10px;
+}
+
+.not-found {
+    text-align: center;
+}
+
+.not-found-actions {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.75rem;
+    margin-top: 1.5rem;
+}

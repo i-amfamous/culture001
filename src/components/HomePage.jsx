@@ -1,89 +1,170 @@
 import { Link } from "react-router-dom";
-import NavBar from "./NavBar"
+import NavBar from "./NavBar";
 import Footer from "./Footer";
-import "./styles/style.css"
+import ProductCard from "./ProductCard";
+import ReviewCarousel from "./ReviewCarousel";
+import products from "./data/products";
+import "./styles/style.css";
+
+const featured = products.slice(0, 4);
 
 const HomePage = () => {
   return (
     <>
-    <NavBar />
-    <main className="page-home">
-         <section className="hero">
-            <h1>WEAR YOUR HERITAGE</h1>
-            <p>Discover Kente, African-inspired fashion, and statement pieces rooted in culture, identity, and confidence. Our collections celebrate heritage while bringing a bold, modern edge to everyday style.</p>
-            <div className="hero-buttons">
-                <Link to="/products" className="btn">SHOP KENTE</Link>
-                <Link to="/about" className="btn">OUR STORY</Link>
-            </div>
+      <NavBar />
+      <main className="page-home">
+        <section className="hero">
+          <h1>WEAR YOUR HERITAGE</h1>
+          <p>
+            Discover Kente, African-inspired fashion, and statement pieces
+            rooted in culture, identity, and confidence. Our collections
+            celebrate heritage while bringing a bold, modern edge to everyday
+            style.
+          </p>
+          <div className="hero-buttons">
+            <Link to="/products" className="btn">
+              SHOP KENTE
+            </Link>
+            <Link to="/about" className="btn">
+              OUR STORY
+            </Link>
+          </div>
         </section>
 
         <div className="featuredProducts">
-            <h2>Featured Kente & African Wear</h2>
-            <section className="products">
-            </section>
+          <h2>Featured Kente &amp; African Wear</h2>
+          <section className="products">
+            {featured.map((product) => (
+              <ProductCard
+                key={product.id}
+                product={product}
+                variant="featured"
+              />
+            ))}
+          </section>
+          <div className="featuredAction">
+            <Link to="/products" className="btn">
+              View the full collection
+            </Link>
+          </div>
         </div>
 
-        <div className="goals">
-            <div className="left-goal">
-                <p>OUR PHILOSOPHY</p>
-                <h2>HERITAGE IS STYLE.</h2>
-                <p>At CULTURE / 001, we design for people who want to carry history, identity, and confidence in every outfit. Kente and African-inspired fashion are more than clothing — they are a way of expressing pride and personal story.</p>
-                <p>Every piece in our collection reflects craftsmanship, culture, and the belief that style can be both timeless and bold. We create modern looks rooted in tradition so you can stand out with purpose.</p>
+        <section className="philosophy" aria-labelledby="philosophy-heading">
+          <div className="philosophy-intro">
+            <h2 id="philosophy-heading">
+              Culture
+              <span>crafted for now.</span>
+            </h2>
+            <div className="philosophy-copy">
+              <p>
+                CULTURE / 001 brings elevated African fashion to everyday life,
+                blending rich heritage with a clean, contemporary point of view.
+                Each piece is designed to honor tradition while feeling polished,
+                wearable, and unmistakably modern.
+              </p>
+              <p>
+                From expressive Kente-inspired silhouettes to refined staples,
+                our collections are built for people who want to dress with
+                intention, confidence, and a strong sense of identity.
+              </p>
             </div>
-            <div className="right-goal">
-                <h3>BUILT ON CULTURE. DRIVEN BY IDENTITY.</h3>
-                <p>Our vision is to bring African fashion to the forefront with pieces that feel elevated, meaningful, and wearable. We celebrate craftsmanship, heritage, and the confidence that comes from dressing in a way that reflects who you are.</p>
-                <p>We are not here to copy trends. We are here to honor culture and create looks that feel powerful, authentic, and unforgettable.</p>
-            </div>
-            <div className="left-goal">
-                <h3>BEYOND CLOTHING. A STATEMENT.</h3>
-                <p>Every collection tells a story through rich color, texture, and pattern. We believe fashion should carry significance and help you express your roots with pride.</p>
-                <p>Our Kente and African pieces are designed for celebrations, everyday confidence, and the moments when you want your outfit to speak for you before you say a word.</p>
-            </div>
-            <div className="right-goal">
-                <h3>DETAILS MATTER. HERITAGE SPEAKS.</h3>
-                <p>We believe greatness begins with intention. From the pattern to the fit and finish, every detail matters in a piece that reflects culture and style.</p>
-                <p>Our goal is to offer a fashion experience that feels elevated, meaningful, and full of identity, with quality you can wear with pride.</p>
-            </div>
-            <div className="left-goal">
-                <h3>FOR THOSE WHO MOVE WITH PURPOSE.</h3>
-                <p>For the dreamers, the culture-lovers, and the confident ones who dress with meaning. We create for people who want to feel rooted, refined, and visible.</p>
-                <p>This is fashion for those who know that style is not just appearance — it is expression, confidence, and pride.</p>
-            </div>
-            <div className="right-goal">
-                <h3>YOUR STYLE. YOUR STORY. YOUR ROOTS.</h3>
-                <p>Wear your identity with confidence. Celebrate heritage with elegance. Make every look a reflection of who you are.</p>
-                <Link to="/products" className="btn">SHOP THE COLLECTION</Link>
-            </div>
-        </div>
+          </div>
 
-        <section className="review" aria-labelledby="reviews-title">
-            <div className="review-heading">
-                <div>
-                    <h2 id="reviews-title">Loved for their meaning and style.</h2>
-                </div>
-                <div className="review-controls" aria-label="Review carousel controls">
-                    <button className="review-control" type="button" data-review-direction="previous" aria-label="Previous review">
-                        <span aria-hidden="true">&larr;</span>
-                    </button>
-                    <button className="review-control" type="button" data-review-direction="next" aria-label="Next review">
-                        <span aria-hidden="true">&rarr;</span>
-                    </button>
-                </div>
+          <div className="philosophy-grid">
+            <article className="philosophy-card">
+              <span className="philosophy-index" aria-hidden="true">
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M12 3.5 14.2 8l4.8.7-3.5 3.4 0.8 4.8-4.3-2.3-4.3 2.3 0.8-4.8L5 8.7l4.8-.7L12 3.5Z" />
+                </svg>
+              </span>
+              <h3>Heritage, refined.</h3>
+              <p>
+                We reinterpret African artistry through a luxury lens balancing
+                craftsmanship, texture, and storytelling so every garment feels
+                both rooted and elevated.
+              </p>
+            </article>
+
+            <article className="philosophy-card">
+              <span className="philosophy-index" aria-hidden="true">
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M6 17.5V8.2L12 4l6 4.2v9.3M9 11.5h6M9 15h6" />
+                </svg>
+              </span>
+              <h3>Modern confidence.</h3>
+              <p>
+                Our designs are created for the moments that matter: celebrations,
+                daily expression, and the confidence of wearing something that
+                feels true to who you are.
+              </p>
+            </article>
+
+            <article className="philosophy-card">
+              <span className="philosophy-index" aria-hidden="true">
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M7.5 10.5h9M7.5 13.5h6M8 18.5h8a2 2 0 0 0 2-2V8.5a2 2 0 0 0-2-2H8a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2Z" />
+                </svg>
+              </span>
+              <h3>Quality in every detail.</h3>
+              <p>
+                From pattern and proportion to finish and fit, we approach every
+                piece with precision so it feels elevated, effortless, and lasting.
+              </p>
+            </article>
+
+            <article className="philosophy-card">
+              <span className="philosophy-index" aria-hidden="true">
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M12 3.5v4M12 16.5v4M3.5 12h4M16.5 12h4M6.5 6.5l2.8 2.8M14.7 14.7l2.8 2.8M17.5 6.5l-2.8 2.8M9.3 14.7l-2.8 2.8" />
+                </svg>
+              </span>
+              <h3>Made to stand out.</h3>
+              <p>
+                We create fashion that speaks before you do clear, confident,
+                and unapologetically expressive without losing its elegance.
+              </p>
+            </article>
+          </div>
+
+          <div className="philosophy-close">
+            <div>
+              <h3>Wear your story with presence.</h3>
+              <p>
+                Discover pieces designed for modern living, cultural pride, and a
+                wardrobe that feels elevated in every moment.
+              </p>
             </div>
-            <div className="review-viewport">
-                <div className="userReview" aria-live="polite"></div>
-            </div>
+            <Link to="/products" className="philosophy-link">
+              Shop the collection
+              <span aria-hidden="true">&rarr;</span>
+            </Link>
+          </div>
         </section>
-        <div className="cta">
-            <h2>STYLE WITH ROOTS. IMPACT WITH PRESENCE.</h2>
-            <p>Celebrate your tradition with a modern look that feels elevated, expressive, and confidently you.</p>
-            <Link to="/products" className="btn">SHOP KENTE</Link>
-        </div>
-    </main>
-    <Footer />
-    </>
-  )
-}
 
-export default HomePage
+        <ReviewCarousel />
+
+        <section className="cta" aria-labelledby="cta-heading">
+          <div className="cta-inner">
+            <h2 id="cta-heading">
+              Style with roots.
+              <span>Impact with presence.</span>
+            </h2>
+            <div className="cta-footer">
+              <p>
+                Celebrate your tradition with a modern look that feels
+                elevated, expressive, and confidently you.
+              </p>
+              <Link to="/products" className="btn">
+                Shop Kente
+                <span aria-hidden="true">&rarr;</span>
+              </Link>
+            </div>
+          </div>
+        </section>
+      </main>
+      <Footer />
+    </>
+  );
+};
+
+export default HomePage;
