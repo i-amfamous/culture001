@@ -62,7 +62,7 @@
 
 .cartItems .productCard {
     display: grid;
-    grid-template-columns: 104px minmax(0, 1fr) auto;
+    grid-template-columns: 104px minmax(0, 1fr) max-content;
     align-items: center;
     min-width: 0;
     gap: 1.25rem;
@@ -110,18 +110,41 @@
 .cartQuantity {
     display: flex;
     align-items: center;
-    gap: 0.65rem;
+    justify-content: flex-end;
+    gap: 0.55rem;
     justify-self: end;
+    width: max-content;
+    min-height: 42px;
+    padding: 0.35rem 0.45rem;
     color: #292622;
     font-size: 0.9rem;
     font-weight: 500;
+    background: #f8f5f2;
+    border: 1px solid #efeae4;
+    border-radius: 999px;
+    margin-left: auto;
+}
+
+.cartQuantity p {
+    min-width: 1.5rem;
+    margin: 0;
+    color: #292622;
+    font-size: 1rem;
+    font-weight: 700;
+    line-height: 1;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .cartQuantity button {
-    display: grid;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
     width: 30px;
     height: 30px;
-    place-items: center;
+    padding: 0;
     color: #292622;
     font: inherit;
     background: #fff;
@@ -129,6 +152,8 @@
     border-radius: 50%;
     cursor: pointer;
     transition: background-color 160ms ease, border-color 160ms ease;
+    flex-shrink: 0;
+    line-height: 1;
 }
 
 .cartQuantity button:hover:not(:disabled) {
@@ -143,7 +168,9 @@
 
 .cartQuantity .removeCartItem {
     width: auto;
-    margin-left: auto;
+    min-width: 66px;
+    height: 30px;
+    margin-left: 0.2rem;
     padding: 0 0.75rem;
     color: #8a483d;
     border-color: #ead7d2;

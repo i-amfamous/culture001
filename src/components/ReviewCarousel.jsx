@@ -144,6 +144,24 @@ const ReviewCarousel = () => {
               <span>{reviews.length} reviews</span>
             </span>
           </div>
+          <div className="review-controls" aria-label="Review carousel controls">
+            <button
+              className="review-control"
+              type="button"
+              aria-label="Previous reviews"
+              onClick={() => goTo(index - 1)}
+            >
+              <span aria-hidden="true">&larr;</span>
+            </button>
+            <button
+              className="review-control"
+              type="button"
+              aria-label="Next reviews"
+              onClick={() => goTo(index + 1)}
+            >
+              <span aria-hidden="true">&rarr;</span>
+            </button>
+          </div>
         </div>
       </div>
 
@@ -174,10 +192,13 @@ const ReviewCarousel = () => {
 
       <div className="review-dots" aria-label="Review slides">
         {slides.map((slide, slideIndex) => (
-          <span
+          <button
             key={slide[0]?.id ?? slideIndex}
+            type="button"
             className={slideIndex === index ? "review-dot is-active" : "review-dot"}
+            aria-label={`Go to reviews page ${slideIndex + 1}`}
             aria-current={slideIndex === index}
+            onClick={() => goTo(slideIndex)}
           />
         ))}
       </div>
