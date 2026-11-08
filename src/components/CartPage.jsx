@@ -81,27 +81,30 @@ const CartPage = () => {
                     </p>
                   </div>
 
-                  <div className="cartQuantity">
-                    <button
-                      type="button"
-                      onClick={() => decrement(item.id)}
-                      disabled={item.quantity <= 1}
-                      aria-label={`Decrease ${item.name} quantity`}
-                    >
-                      −
-                    </button>
-                    <p aria-live="polite">{item.quantity}</p>
-                    <button
-                      type="button"
-                      onClick={() => increment(item.id)}
-                      aria-label={`Increase ${item.name} quantity`}
-                    >
-                      +
-                    </button>
+                  <div className="cartItemActions">
+                    <div className="cartQuantity" aria-label="Item quantity">
+                      <button
+                        type="button"
+                        onClick={() => decrement(item.id)}
+                        disabled={item.quantity <= 1}
+                        aria-label={`Decrease ${item.name} quantity`}
+                      >
+                        −
+                      </button>
+                      <span aria-live="polite">{item.quantity}</span>
+                      <button
+                        type="button"
+                        onClick={() => increment(item.id)}
+                        aria-label={`Increase ${item.name} quantity`}
+                      >
+                        +
+                      </button>
+                    </div>
                     <button
                       type="button"
                       className="removeCartItem"
                       onClick={() => removeItem(item.id)}
+                      aria-label={`Remove ${item.name} from cart`}
                     >
                       Remove
                     </button>
