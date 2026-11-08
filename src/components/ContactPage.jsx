@@ -25,7 +25,6 @@ const ContactPage = () => {
       <NavBar />
       <main className="page-contact">
         <section className="page-hero">
-          <p className="eyebrow">Get in touch</p>
           <h1>Contact CULTURE / 001</h1>
           <p>
             Questions about a piece, sizing, or your order? Send us a message
